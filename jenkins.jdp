@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('pull'){
             step{
-                git branch: 'dev', url: 'https://github.com/mayurmwagh/B5-B16-B14-combine-backend.git'
+                git branch: 'main', url: 'https://github.com/mayurmwagh/B5-B16-B14-combine-backend.git'
             }
         }
         stage('build'){
