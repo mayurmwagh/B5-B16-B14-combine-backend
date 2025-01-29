@@ -17,6 +17,7 @@ pipeline {
                 docker build . -t mayurwagh/combine-backend51416:latest
                 docker push mayurwagh/combine-backend51416:latest
                 docker rmi mayurwagh/combine-backend51416:latest
+                kubectl apply -f ./yaml/
                 '''
                 
             }
